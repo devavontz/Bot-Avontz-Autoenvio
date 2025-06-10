@@ -5,9 +5,10 @@ from pyrogram import Client
 from pyrogram.types import InputMediaPhoto
 from datetime import datetime
 
-API_ID = 29530163  # Substituir pelo seu API_ID (caso use sessão)
-API_HASH = "6066497fd46d35ea3dac9a179e27047b"  # Substituir pelo seu API_HASH (caso use sessão)
-BOT_TOKEN = "7871641813:AAGvgNQpRvWuM0N7BXHPEqhTiEKoIK9DxMo"
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 
 # IDs dos destinos
 CANAL_USERNAME = "@Avontzzp"
